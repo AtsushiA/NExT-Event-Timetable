@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "next-event-timetable/card",
+	"title": "NExT Event Card",
+	"category": "layout",
+	"description": "Session card linked to a custom post.",
+	"parent": [ "next-event-timetable/track" ],
+	"supports": { "html": false },
+	"usesContext": [
+		"next-event-timetable/timeStart",
+		"next-event-timetable/timeInterval"
+	],
+	"attributes": {
+		"postId":       { "type": "integer", "default": 0 },
+		"timeStart":    { "type": "string",  "default": "" },
+		"timeEnd":      { "type": "string",  "default": "" },
+		"sessionTitle": { "type": "string",  "default": "" },
+		"speakerName":  { "type": "string",  "default": "" },
+		"speakerAvatar":{ "type": "string",  "default": "" },
+		"sessionType":  { "type": "string",  "default": "talk" },
+		"sessionTag":   { "type": "string",  "default": "" },
+		"gridRowStart": { "type": "integer", "default": 1 },
+		"gridRowEnd":   { "type": "integer", "default": 2 }
+	},
+	"editorScript": "file:./index.js",
+	"viewScript":   "file:./view.js"
+}

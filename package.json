@@ -1,0 +1,13 @@
+{
+  "name": "next-event-timetable",
+  "version": "1.0.0",
+  "description": "Event timetable Gutenberg blocks",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "lint:js": "wp-scripts lint-js"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^30.0.0"
+  }
+}

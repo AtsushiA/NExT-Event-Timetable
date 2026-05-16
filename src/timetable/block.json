@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "next-event-timetable/timetable",
+	"title": "NExT Event Timetable",
+	"category": "layout",
+	"description": "Event timetable with time axis and track columns.",
+	"supports": {
+		"html": false,
+		"align": [ "wide", "full" ]
+	},
+	"attributes": {
+		"eventDate":     { "type": "string",  "default": "" },
+		"timeStart":     { "type": "string",  "default": "09:00" },
+		"timeEnd":       { "type": "string",  "default": "18:00" },
+		"timeInterval":  { "type": "integer", "default": 60 }
+	},
+	"providesContext": {
+		"next-event-timetable/timeStart":    "timeStart",
+		"next-event-timetable/timeInterval": "timeInterval"
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css"
+}

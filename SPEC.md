@@ -1,6 +1,6 @@
 # NExT Event Timetable — WordPress Plugin 仕様書
 
-**プラグイン名** : NExT Event Timeline  
+**プラグイン名** : NExT Event Timetable  
 **スラッグ** : next-event-timetable  
 **ビルドツール** : @wordpress/scripts（JSX / ES Modules）
 

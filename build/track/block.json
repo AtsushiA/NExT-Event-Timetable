@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "next-event-timetable/track",
+  "title": "NExT Event Track",
+  "category": "layout",
+  "description": "Track column inside the timetable.",
+  "parent": [
+    "next-event-timetable/timetable"
+  ],
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "trackName": {
+      "type": "string",
+      "default": ""
+    },
+    "trackColor": {
+      "type": "string",
+      "default": "#3b82f6"
+    },
+    "trackIcon": {
+      "type": "string",
+      "default": ""
+    },
+    "capacity": {
+      "type": "integer",
+      "default": 0
+    }
+  },
+  "usesContext": [
+    "next-event-timetable/timeStart",
+    "next-event-timetable/timeInterval"
+  ],
+  "editorScript": "file:./index.js"
+}
